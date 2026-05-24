@@ -51,6 +51,63 @@ my_name = getName("Marie")
 print(f"My name is {my_name}")
 getGrade(marks)
 
+getProfile(name, age, location, country, date_of_birth)
+
+getMarks(marks)
+
+getClasses(classes)
+
+print("\nMy Majors:")
+for major in majors:
+    print(major)
+
+print("\nMy Minors:")
+for group in minors:
+    for minor in group:
+        print(minor)
+
+while True:
+    
+    user_input = input(
+        "\nEnter what you want to see "
+        "(profile, classes, marks, grades, maijors, minors) "
+        "or type close to exit: "
+    )
+
+    if user_input.lower() == "close":
+        print("Program closed.")
+        break
+
+    elif user_input.lower() == "profile":
+        getProfile(name, age, location, country, date_of_birth)
+
+    elif user_input.lower() == "classes":
+        getClasses(classes)
+
+    elif user_input.lower() == "marks":
+        getMarks(marks)
+
+    elif user_input.lower() == "grades":
+        getGrade(marks)
+
+    elif user_input.lower() == "majors":
+        print("\nMajors:")
+        for major in majors:
+            print(major)
+
+    elif user_input.lower() == "minors":
+        print("\nMinors:")
+        for group in minors:
+            for minor in group:
+                print(minor)
+
+    else:
+        print("Invalid option. Try again.")
+
+
+
+
+
 # 1. Prints out my majors
 # 2. Prints out my Minors
 # 3. Use a while loop to ask the user to enter the information they want and close when the user types close
