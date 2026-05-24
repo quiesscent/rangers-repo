@@ -52,5 +52,19 @@ print(f"My name is {my_name}")
 getGrade(marks)
 
 # 1. Prints out my majors
+for major in majors:
+    print(f'My major is {major}')
+
 # 2. Prints out my Minors
+for minor in minors:
+    for i in minor:
+        print(f'My minor is {i}')
+
 # 3. Use a while loop to ask the user to enter the information they want and close when the user types close
+while True:
+    user_input = input("Enter your input(enter close to quit program): ")
+    
+    if user_input.lower() == "close":
+        break
+    else:
+        print(user_input)
