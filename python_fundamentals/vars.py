@@ -1,3 +1,6 @@
+from logging import config
+
+
 name = "John"
 date_of_birth = "2005-10-15"
 age = 25
@@ -73,4 +76,3 @@ while True:
         break
     else:
         print(f"you entered: {user_input}")
-        
