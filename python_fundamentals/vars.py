@@ -52,5 +52,33 @@ print(f"My name is {my_name}")
 getGrade(marks)
 
 # 1. Prints out my majors
+print("My majors are:")
+for major in majors:
+    print(major)
 # 2. Prints out my Minors
-# 3. Use a while loop to ask the user to enter the information they want and close when the user types close
+print("My minors are:")
+for group in minors:
+    for subject in group:
+        print(subject)
+# 3. Use a while loop to ask the user to enter the information t
+while True:
+    choice = input("Enter information you want (profile, classes, marks, grade, close): ")
+
+    if choice == "profile":
+        getProfile(name, age, location, country, date_of_birth)
+
+    elif choice == "classes":
+        getClasses(classes)
+
+    elif choice == "marks":
+        getMarks(marks)
+
+    elif choice == "grade":
+        getGrade(marks)
+
+    elif choice == "close":
+        print("Program closed")
+        break
+
+    else:
+        print("Invalid choice")
